@@ -1,0 +1,77 @@
+html, body, .wrapper-table {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper-table-opacity {
+  background-color:rgba(0,0,0,0.68);
+  color:white;
+}
+
+.wrapper-table {
+    display: table;
+}
+
+.wrapper-table-cell {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content-coming-soon {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.coming-soon-wrapper {
+  text-align:center;
+  background-color:#ecf0f1;
+  padding:20px;
+  display:inline-block;
+}
+
+.coming-soon-wrapper-transparent {
+  text-align:center;
+  background-color:rgba(0,0,0,0.6);
+  padding:20px;
+  display:inline-block;
+  color:white;
+}
+.coming-soon-wrapper+.coming-soon-wrapper,
+.coming-soon-wrapper-transparent+.coming-soon-wrapper-transparent {
+  margin-left:16px;
+}
+
+.coming-soon-time {
+  font-size:40px;
+  font-weight:700;
+}
+.coming-soon-date {
+  display:block;
+  font-size:16px;
+}
+
+@media (max-width:767px) {
+  .coming-soon-wrapper,
+  .coming-soon-wrapper-transparent {
+    padding:10px;
+  }
+  .coming-soon-wrapper+.coming-soon-wrapper,
+  .coming-soon-wrapper-transparent+.coming-soon-wrapper-transparent {
+    margin-left:8px;
+  }
+
+  .coming-soon-time {
+    font-size:22px;
+    font-weight:700;
+  }
+  .coming-soon-date {
+    display:block;
+    font-size:13px;
+  }
+}

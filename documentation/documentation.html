@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Z-Theme Documentation</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.css" id="color-style">
+  <link rel="stylesheet" type="text/css" href="assets/css/prettify.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/documentation.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="body-doc" data-spy="scroll" data-target=".wrapper-doc-nav" onload="prettyPrint()">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2">
+        <!-- Sidebar -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="wrapper-doc-nav">
+              <h3 class="hr-before title-sm">documentation</h3>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a data-scroll href="#s-1">Intro</a></li>
+                <li><a data-scroll href="#s-2">File Structure</a></li>
+                <li><a data-scroll href="#s-3">CSS Structure</a></li>
+                <li><a data-scroll href="#s-4">Customization & Styles</a></li>
+                <li><a data-scroll href="#s-5">Lightbox</a></li>
+                <li><a data-scroll href="#s-6">Filtering Portfolio</a></li>
+                <li><a data-scroll href="#s-7">Source & Credits</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-main">
+        <!-- Content -->
+        <div id="s-1" class="section section-md section-top">
+          <div class="row">
+            <div class="col-xs-12">
+              <img src="assets/images/logo/logo-default-2.png" alt="img-doc">
+              <p class="lead text-theme-lg">Documentation</p>
+              <hr class="hr-divider-xs">
+              <ul class="list-unstyled intro-doc-date text-left text-theme-lg">
+                <li><h3 class="lead">Version : 1.0</h3></li>
+                <li>created : 02.02.2015</li>
+                <li>support : <a class="mailto" href="mailto:support@mamootstudio.com">support@mamootstudio.com</a></li>
+                <li>by : Mamoot Studio</li>
+              </ul>
+              <p class="text-theme text-theme-lg">
+                Thank you for purchasing Z-Theme, feel free to contact by <br>e-mail for support.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Files Structure -->
+        <div id="s-2" class="section section-md section-top">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead text-theme-lg">File Structure</p>
+              <hr class="hr-divider-xs">
+<pre>
+- z-theme
+  - assets
+    - css (Template and Plugins CSS)
+
+    - images (Template Images)
+
+    - js (Template and Plugins JS)
+        - page (JS to run in specific pages.)
+
+- skin (Template Predifined Colors CSS and Less file to change the theme color with just one line of code)
+
+- documentation (Template Documentation)
+</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Structure -->
+        <div id="s-3" class="section section-md section-top">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead text-theme-lg">CSS Structure</p>
+              <hr class="hr-divider-xs">
+<pre>
+- theme.css (includes styling of all elements and sections)
+
+- photographer.css (styling of photographer page)
+
+- coming-soon-404.css (styling of coming-soon and 404 pages)
+
+- carousel-animate.css (styling of intro carousel preloading and animation)
+
+- magnific-popup.css (magnific-popup default styling)
+
+- owl-carousel.css (owl carousel default styling)
+
+- owl-theme-animate.css (owl carousel default styling)
+
+- prettify.css (styling of google prettify code highlighting)
+</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customization -->
+        <div id="s-4" class="section section-md section-top">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead text-theme-lg">Customization & Styles</p>
+              <hr class="hr-divider-xs">
+              <h3 class="lead">Colors</h3>
+              <p class="text-theme-lg">There are 20 predefined color files in "skin" folder, just select one, rename it to "theme.css then replace it with your existing theme.css file in the assets > css folder.</p>
+              <hr class="hr-divider-ghost">
+              <h3 class="lead">Manual color with less</h3>
+              <p class="text-theme-lg">You can change the theme color with just 1 line of code by changing the @primarycolor in color.less file in skins folder.</p>
+
+
+              <hr class="hr-divider-ghost">
+              <h3 class="lead">Layout (Normal/Boxed)</h3>
+              <p class="text-theme-lg">Template has two layout mode, default one is wide. You can use the Boxed version by adding <code>container boxed</code> to body. Example</p>
+              <hr class="hr-divider-xs">
+<pre>
+&lt;body class=&quot;container boxed&quot;&gt;
+</pre>
+              <hr class="hr-divider-ghost">
+              <h3 class="lead">Navbar dropdown options</h3>
+              <div class="row">
+                <div class="col-xs-6">
+                  <h3 class="text-theme title-xs hr-before">default</h3>
+                  <p class="text-theme"><code>.navbar .navbar-default</code></p>
+                  <img class="text-theme" src="assets/images/nav-1.png" alt="img-doc">
+                </div>
+                <div class="col-xs-6">
+                  <h3 class="text-theme title-xs hr-before">option-2</h3>
+                  <p class="text-theme"><code>.navbar .navbar-default .nav-dropdown-v1</code></p>
+                  <img class="text-theme" src="assets/images/nav-2.png" alt="img-doc">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="s-5" class="section section-md section-top section-doc-lightbox">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead text-theme-lg">Lightbox</p>
+              <hr class="hr-divider-xs">
+              <p>Z-theme uses <strong>Magnific Popup</strong> for lightbox. <br> For more information check <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html">Documentation</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filtering Portfolio Mixitup -->
+        <div id="s-6" class="section section-md section-top">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead text-theme-lg">Filtering Portfolio</p>
+              <hr class="hr-divider-xs">
+              <p>Z-theme uses <strong>Mixitup</strong> for filtering portfolio. <br> For more information check <a href="https://mixitup.kunkalabs.com/learn/tutorial/get-started/">Documentation</a><br> Example :</p>
+<pre class="prettyprint">
+&lt;div class=&quot;section section-lg section-both&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;!-- Navigation --&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;h3 class=&quot;text-theme-lg title-section title-xl text-uppercase text-center hr&quot;&gt;our latest work&lt;/h3&gt;
+      &lt;ul class=&quot;list-unstyled text-center text-theme-lg&quot;&gt;
+        &lt;li class=&quot;filter btn btn-ghost btn-orange&quot; data-filter=&quot;all&quot;&gt;ALL&lt;/li&gt;
+        &lt;li class=&quot;filter btn btn-ghost btn-orange&quot; data-filter=&quot;.logo&quot;&gt;LOGO DESIGN&lt;/li&gt;
+        &lt;li class=&quot;filter btn btn-ghost btn-orange&quot; data-filter=&quot;.art&quot;&gt;ART&lt;/li&gt;
+        &lt;li class=&quot;filter btn btn-ghost btn-orange&quot; data-filter=&quot;.web-design&quot;&gt;WEB-DESIGN&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;!-- Portfolio gallery container --&gt;
+    &lt;div id=&quot;container-mixitup&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;mix logo all col-sm-4 col-xs-12&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;img-wrapper&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;#&quot; alt=&quot;portfolio&quot;&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;caption-portfolio text-center&quot;&gt;
+            &lt;h3 class=&quot;text-theme title-xs&quot;&gt;Logo&lt;/h3&gt;
+            &lt;p class=&quot;text-theme&quot;&gt;Lorem ipsum dolor sit amet, consectetuer&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mix web-design all col-sm-4 col-xs-12&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;img-wrapper&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;#&quot; alt=&quot;portfolio&quot;&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;caption-portfolio text-center&quot;&gt;
+            &lt;h3 class=&quot;text-theme title-xs&quot;&gt;Web Design&lt;/h3&gt;
+            &lt;p class=&quot;text-theme&quot;&gt;Lorem ipsum dolor sit amet, consectetuer&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mix web-design all col-sm-4 col-xs-12&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;img-wrapper&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;#&quot; alt=&quot;portfolio&quot;&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;caption-portfolio text-center&quot;&gt;
+            &lt;h3 class=&quot;text-theme title-xs&quot;&gt;Web Design&lt;/h3&gt;
+            &lt;p class=&quot;text-theme&quot;&gt;Lorem ipsum dolor sit amet, consectetuer&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Source & Credits -->
+        <div id="s-7" class="section section-md section-top">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead text-theme-lg">Source & Credits</p>
+              <hr class="hr-divider-xs">
+              <h3 class="title-sm hr-before text-theme">PSD Mockups</h3>
+              <ul class="list-unstyled text-theme list-doc">
+                <li><strong>Apple Devices</strong> - <a href="http://www.pixeden.com/psd-web-elements/responsive-showcase-psd">http://www.pixeden.com/psd-web-elements/responsive-showcase-psd</a></li>
+                <li><strong>Macbook Pro Mockups</strong> - <a href="https://dribbble.com/shots/985593-MacBook-Pro-15-Scalable-Mock-ups">https://dribbble.com/shots/985593-MacBook-Pro-15-Scalable-Mock-ups</a></li>
+                <li><strong>iPhone Mockup</strong> - <a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5s-psd-vector-mockup">http://www.pixeden.com/psd-mock-up-templates/iphone-5s-psd-vector-mockup</a></li>
+              </ul>
+              <h3 class="title-sm hr-before text-theme">Fonts</h3>
+              <ul class="list-unstyled text-theme list-doc">
+                <li><strong>Google Fonts</strong> - <a href="https://www.google.com/fonts">https://www.google.com/fonts</a></li>
+                <li><strong>Font Awesome Icons</strong> - <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+              </ul>
+              <h3 class="title-sm hr-before text-theme">Scripts</h3>
+              <ul class="list-unstyled text-theme list-doc">
+                <li><strong>Backstretch</strong> - <a href="http://srobbin.com/jquery-plugins/backstretch/">http://srobbin.com/jquery-plugins/backstretch/</a></li>
+                <li><strong>Bxslider</strong> - <a href="http://bxslider.com/">http://bxslider.com/</a></li>
+                <li><strong>Countdown</strong> - <a href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a></li>
+                <li><strong>CountTo</strong> - <a href="https://github.com/mhuggins/jquery-countTo">https://github.com/mhuggins/jquery-countTo</a></li>
+                <li><strong>Fittext</strong> - <a href="http://fittextjs.com/">http://fittextjs.com/</a></li>
+                <li><strong>Knob</strong> - <a href="http://anthonyterrien.com/knob/">http://anthonyterrien.com/knob/</a></li>
+                <li><strong>Magnific-Popup</strong> - <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+                <li><strong>Mixitup</strong> - <a href="https://mixitup.kunkalabs.com/">https://mixitup.kunkalabs.com/</a></li>
+                <li><strong>jRespond</strong> - <a href="https://github.com/ten1seven/jRespond">https://github.com/ten1seven/jRespond</a></li>
+                <li><strong>Owl-Carousel</strong> - <a href="http://owlgraphic.com/owlcarousel/">http://owlgraphic.com/owlcarousel/</a></li>
+                <li><strong>Prettify</strong> - <a href="https://code.google.com/p/google-code-prettify/">https://code.google.com/p/google-code-prettify/</a></li>
+                <li><strong>Smooth-Scroll</strong> - <a href="https://github.com/cferdinandi/smooth-scroll">https://github.com/cferdinandi/smooth-scroll</a></li>
+                <li><strong>Waypoints</strong> - <a href="http://imakewebthings.com/waypoints/">http://imakewebthings.com/waypoints/</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row mt-100 section section-bottom section-sm section-doc-footer">
+          <div class="col-xs-12">
+            <p class="text-theme-lg">Once again, thank you for purchasing Z-Theme. I'd be glad to help you if you have any questions.</p>
+            <h3 class="title-md text-theme-lg"><a href="http://mamootstudio.com">Mamoot Studio</a></h3>
+            <ul class="list-inline text-theme-lg">
+              <li>
+                <a href="http://twitter.com/mamootstudio"><i class="fa fa-twitter fa-round"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://facebook.com/mamootstudio"><i class="fa fa-facebook fa-round"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container end -->
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="assets/js/prettify.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
+  <script>
+      smoothScroll.init();
+  </script>
+</body>
+
+</html>
